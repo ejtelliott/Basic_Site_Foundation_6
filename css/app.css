@@ -1,0 +1,28 @@
+/* GENERAL */
+
+.wrap {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* NAV */
+.top-bar-left {
+}
+
+/* HERO */
+.hero {
+    background-color: #999;
+    padding: 80px 0px;
+    height: 400px;
+}
+
+.button.success {
+    background-color: purple;
+    color: white;
+}
+
+/* MAIN SECTION */
+
+
+/* FOOTER */
