@@ -1,5 +1,8 @@
 /* GENERAL */
 
+* {
+    outline: none;
+}
 .wrap {
     width: 90%;
     max-width: 11000px;
@@ -7,7 +10,43 @@
     display: inherit;
 }
 
+.off-canvas{
+    background-color: #222;
+}
+
+
+
+
+
 /* NAV MOBILE*/
+.title-bar{
+    background-color: #222; 
+    height: 60px;
+}
+
+#mobile-menu {
+    padding:10px;
+}
+
+#mobile-menu li {
+    list-style: none;
+    font-weight: bold;
+    line-height: 2;
+}
+
+#mobile-menu a {
+    color: rgba(255,255,255, 0.6);
+}
+
+#mobile-menu a:hover {
+    color: rgba(255,255,255, 0.8);
+}
+
+.js-off-canvas-overlay {
+    background: rgba(0,0,0, 0.5);
+}
+
+
 
 /* NAV DESKTOP*/
 
@@ -24,11 +63,31 @@
 
 .nav-desktop .menu-desktop {
     line-height: 80px;
+    background-color: transparent;
 }
 
-.nav-desktop a {
+/* .nav-desktop a {
     display: inline-block;
+} */
+
+.menu > li > a {
+    display: inline-block;
+    line-height: 80px;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: white; 
 }
+
+.menu > li > a:hover {
+    background-color: rgba(255,255,255, 0.1);
+}
+
+
+
+
+
+
+
 
 /* HERO */
 
@@ -36,6 +95,13 @@
     background-color: #999;
     padding: 80px 0px;
     height: 400px;
+    background-image: url("../img/what-the-hex-dark.png")
+}
+
+.hero h1,
+.hero p {
+    color: rgba(255,255,255, 0.8);
+    max-width: 70%;
 }
 
 .button.success {
@@ -49,6 +115,16 @@
     padding: 80px 0px;
 }
 
+.grid-padding-x {
+    padding: 200px;
+}
+
+
+
+
+
+
+
 /* FOOTER */
 
 footer {
@@ -56,6 +132,49 @@ footer {
     padding: 80px 0px;
 }
 
+footer h4 {
+    color: rgba(255,255,255,0.8);
+    font-size: 1.3em;
+}
+
+footer hr {
+    border-color: rgba(255,255,255,0.1);
+    margin: 10px 0;
+}
+
 footer a {
     display: block;
+    color: rgba(255,255,255,0.6);
+    font-size: 0.8em;
+}
+
+footer a span {
+    font-weight: bold;
+    color: rgba(255,255,255,0.3)
+}
+
+footer a:hover {
+    color: rgba(255,255,255,0.8);
+}
+
+
+
+
+
+
+
+
+/* MEDIA QUERY */
+
+@media (max-width: 639px) {
+    .nav-desktop{
+        display: none;
+    }
+}
+
+@media (max-width: 875px) {
+    .hero h1,
+    .hero p {
+        width: 100%;
+    }
 }
